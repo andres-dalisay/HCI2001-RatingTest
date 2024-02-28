@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Review Experiment</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+      .welcome-page {
+
+      }
+      .instructions {
+        display: none;
+      }
+      .sample-round {
+        display: none;
+      }
+      .sample-likert {
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="welcome-page">
+      <h1>Welcome</h1>
+      <!-- continue button -->
+      <button id="welcome-continue" class="btn btn-primary" onclick="goToNext('welcome')">Continue</button>
+    </div>
+
+    <div class="instructions">
+      <h1>Instructions</h1>
+      <p>Read the following instructions carefully</p>
+      <button id="inctruction-continue" class="btn btn-primary" onclick="goToNext('instructions')">Continue</button>
+    </div>
+
+    <div class="sample-round">
+      <h1>Sample Round</h1>
+      <button id="round-continue" class="btn btn-primary" onclick="goToNext('sample-round')">Continue</button>
+    </div>
+
+    <div class="sample-likert">
+      <h1>Sample Likert</h1>
+      <button id="likert-continue" class="btn btn-primary" onclick="goToNext('sample-likert')">Continue</button>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var hello = "what";
+      // make a function that hides the welcome page and shows the instructions
+      function goToNext(current_page) {
+        if (current_page == "welcome") {
+          $(".welcome-page").hide();
+          $(".instructions").show();
+        } else if (current_page == "instructions") {
+          $(".instructions").hide();
+          $(".sample-round").show();
+        } else if (current_page == "sample-round") {
+          $(".sample-round").hide();
+          $(".sample-likert").show();
+        } else if (current_page == "sample-likert") {
+          $(".sample-likert").hide();
+          $(".welcome-page").show();
+        }
+      }
+
+    </script>
+  </body>
+</html>
