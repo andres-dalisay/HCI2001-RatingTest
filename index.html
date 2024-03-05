@@ -295,33 +295,78 @@
           $(".instructions").hide();
           $(".sample-round").show();
         } else if (current_page == "sample-round") {
+          if (!validateRadioSelection('sample-round')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".sample-round").hide();
           $(".sample-likert").show();
         } else if (current_page == "sample-likert") {
+          if (!validateRadioSelection('sample-likert')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".sample-likert").hide();
           $(".confirm-to-start").show();
         } else if (current_page == "confirm") {
           $(".confirm-to-start").hide();
           $(".round-one").show();
         } else if (current_page == "round-one") {
+          if (!validateRadioSelection('round-one')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".round-one").hide();
           $(".likert-one").show();
         } else if (current_page == "likert-one") {
+          if (!validateRadioSelection('likert-one')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".likert-one").hide();
           $(".round-two").show();
         } else if (current_page == "round-two") {
+          if (!validateRadioSelection('round-two')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".round-two").hide();
           $(".likert-two").show();
         } else if (current_page == "likert-two") {
+          if (!validateRadioSelection('likert-two')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".likert-two").hide();
           $(".round-three").show();
         } else if (current_page == "round-three") {
+          if (!validateRadioSelection('round-three')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".round-three").hide();
           $(".likert-three").show();
         } else if (current_page == "likert-three") {
+          if (!validateRadioSelection('likert-three')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
           $(".likert-three").hide();
           $(".welcome-page").show();
         }
+      }
+
+      // Check if a selection has been made
+      function validateRadioSelection(section) {
+        var isSelected = false;
+        // selects all input elements of type radio in the section
+        $(`.${section} input[type="radio"]`).each(function() {
+          if (this.checked) {
+            isSelected = true;
+            return false;
+          }
+        });
+        return isSelected;
       }
 
     </script>
