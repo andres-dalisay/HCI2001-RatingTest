@@ -419,55 +419,55 @@
         } else if (current_page == "confirm") {
           $(".confirm-to-start").hide();
           $(".round-one").show();
-        } else if (current_page == "round-one") {
           startTimer();
+        } else if (current_page == "round-one") {
           tempRound = current_page;
           if (!validateRadioSelection('round-one')) {
             alert("Please make a selection before continuing.");
             return;
           }
           $(".round-one").hide();
+          stopTimerAndLogTime(tempRound);
           $(".likert-one").show();
         } else if (current_page == "likert-one") {
           if (!validateRadioSelection('likert-one')) {
             alert("Please make a selection before continuing.");
             return;
           }
-          stopTimerAndLogTime(tempRound);
           $(".likert-one").hide();
           $(".round-two").show();
-        } else if (current_page == "round-two") {
           startTimer();
+        } else if (current_page == "round-two") {
           tempRound = current_page;
           if (!validateRadioSelection('round-two')) {
             alert("Please make a selection before continuing.");
             return;
           }
           $(".round-two").hide();
+          stopTimerAndLogTime(tempRound);
           $(".likert-two").show();
         } else if (current_page == "likert-two") {
           if (!validateRadioSelection('likert-two')) {
             alert("Please make a selection before continuing.");
             return;
           }
-          stopTimerAndLogTime(tempRound);
           $(".likert-two").hide();
           $(".round-three").show();
-        } else if (current_page == "round-three") {
           startTimer();
+        } else if (current_page == "round-three") {
           tempRound = current_page;
           if (!validateRadioSelection('round-three')) {
             alert("Please make a selection before continuing.");
             return;
           }
           $(".round-three").hide();
+          stopTimerAndLogTime(tempRound);
           $(".likert-three").show();
         } else if (current_page == "likert-three") {
           if (!validateRadioSelection('likert-three')) {
             alert("Please make a selection before continuing.");
             return;
           }
-          stopTimerAndLogTime(tempRound);
           $(".likert-three").hide();
           $(".welcome-page").show();
         }
