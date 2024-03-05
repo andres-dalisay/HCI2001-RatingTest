@@ -9,6 +9,49 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript">
+      // Global variables to store selected options
+      var selectedOptions = {
+        'round-one': '',
+        'likert-one': '',
+        'round-two': '',
+        'likert-two': '',
+        'round-three': '',
+        'likert-three': ''
+      };
+    
+      // Rest of your existing code...
+    
+      // Function to update the selected options
+      function updateSelectedOption(section, value) {
+        selectedOptions[section] = value;
+        console.log(`Selected ${section}: ${value}`);
+      }
+    
+      // Function to retrieve the selected options
+      function getSelectedOption(section) {
+        return selectedOptions[section];
+      }
+
+       // Updated function to handle option selection
+      function handleOptionSelection(section, value) {
+        updateSelectedOption(section, value);
+        goToNext(section);
+      }
+
+      // Updated function to handle radio button selection
+      function handleRadioButtonSelection(section) {
+        if (!validateRadioSelection(section)) {
+          alert("Please make a selection before continuing.");
+          return;
+        }
+
+        var selectedValue = $(`.${section} input[type="radio"]:checked`).val();
+        handleOptionSelection(section, selectedValue);
+      }
+
+    </script>
+
     <style>
       .welcome-page {
         text-align: center;
@@ -196,7 +239,7 @@
           <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
         </label>
       </div>
-      <button id="round-one-continue" class="btn btn-primary" onclick="goToNext('round-one')">Continue</button>
+      <button id="round-one-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one')">Continue</button>
 
     </div>
 
@@ -206,28 +249,28 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="Fairly Confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
           Completely Confident
         </label>
       </div>
 
-      <button id="likert-one-continue" class="btn btn-primary" onclick="goToNext('likert-one')">Continue</button>
+      <button id="likert-one-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-one')">Continue</button>
     </div>
 
     <div class="round-two">
@@ -248,7 +291,7 @@
           <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
         </label>
       </div>
-      <button id="round-two-continue" class="btn btn-primary" onclick="goToNext('round-two')">Continue</button>
+      <button id="round-two-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two')">Continue</button>
 
     </div>
 
@@ -258,27 +301,27 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="airly Confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
           Completely Confident
         </label>
       </div>
-      <button id="likert-two-continue" class="btn btn-primary" onclick="goToNext('likert-two')">Continue</button>
+      <button id="likert-two-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-two')">Continue</button>
     </div>
 
     <div class="round-three">
@@ -299,7 +342,7 @@
           <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
         </label>
       </div>
-      <button id="round-three-continue" class="btn btn-primary" onclick="goToNext('round-three')">Continue</button>
+      <button id="round-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three')">Continue</button>
 
     </div>
 
@@ -309,27 +352,27 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="Fairly Confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
           Completely Confident
         </label>
       </div>
-      <button id="likert-three-continue" class="btn btn-primary" onclick="goToNext('likert-three')">Continue</button>
+      <button id="likert-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three')">Continue</button>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
