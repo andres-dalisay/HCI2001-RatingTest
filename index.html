@@ -381,6 +381,19 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       var hello = "what";
+      var startTime;
+      var tempRound;
+
+      function startTimer() {
+          startTime = new Date();
+      }
+
+      function stopTimerAndLogTime(section) {
+          var endTime = new Date();
+          var elapsedTime = endTime - startTime;
+
+          console.log(`Time spent on ${section}: ${elapsedTime} milliseconds`);
+      }
       // make a function that hides the welcome page and shows the instructions
       function goToNext(current_page) {
         if (current_page == "welcome") {
@@ -407,6 +420,8 @@
           $(".confirm-to-start").hide();
           $(".round-one").show();
         } else if (current_page == "round-one") {
+          startTimer();
+          tempRound = current_page;
           if (!validateRadioSelection('round-one')) {
             alert("Please make a selection before continuing.");
             return;
@@ -418,9 +433,12 @@
             alert("Please make a selection before continuing.");
             return;
           }
+          stopTimerAndLogTime(tempRound);
           $(".likert-one").hide();
           $(".round-two").show();
         } else if (current_page == "round-two") {
+          startTimer();
+          tempRound = current_page;
           if (!validateRadioSelection('round-two')) {
             alert("Please make a selection before continuing.");
             return;
@@ -432,9 +450,12 @@
             alert("Please make a selection before continuing.");
             return;
           }
+          stopTimerAndLogTime(tempRound);
           $(".likert-two").hide();
           $(".round-three").show();
         } else if (current_page == "round-three") {
+          startTimer();
+          tempRound = current_page;
           if (!validateRadioSelection('round-three')) {
             alert("Please make a selection before continuing.");
             return;
@@ -446,6 +467,7 @@
             alert("Please make a selection before continuing.");
             return;
           }
+          stopTimerAndLogTime(tempRound);
           $(".likert-three").hide();
           $(".welcome-page").show();
         }
