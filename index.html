@@ -23,6 +23,22 @@
         display: none;
       }
 
+      .round-one, .round-two, .round-three {
+        display: none;
+      }
+
+      .round-one input[type="radio"], .round-two input[type="radio"], .round-three input[type="radio"]{
+        display: none;
+      }
+
+      .likert-one, .likert-two, .likert-three {
+        display: none;
+      }
+
+      .confirm-to-start {
+        display: none;
+      }
+
       /* Hide the radio button */
       .sample-round input[type="radio"] {
         display: none;
@@ -54,7 +70,7 @@
       <!-- Make a radio selection using images -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
           <img src="images/sampleround/sample-bag.png" alt="Image 1" draggable="false">
         </label>
         <label>
@@ -76,7 +92,7 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
           1
         </label>
         <label>
@@ -95,9 +111,174 @@
           <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
           5
         </label>
+      </div>
 
       <button id="likert-continue" class="btn btn-primary" onclick="goToNext('sample-likert')">Continue</button>
     </div>
+
+    <div class="confirm-to-start">
+      <h1>Confirm to Start</h1>
+      <p>Read the following instructions carefully</p>
+      <button id="confirm-continue" class="btn btn-primary" onclick="goToNext('confirm')">Continue</button>
+    </div>
+
+    <div class="round-one">
+      <h1>Round One</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/sampleround/sample-bag.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/sampleround/sample-bag.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/sampleround/sample-bag.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-one-continue" class="btn btn-primary" onclick="goToNext('round-one')">Continue</button>
+
+    </div>
+
+    <div class="likert-one">
+      <h1>Likert One</h1>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          1
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          2
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          3
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          4
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          5
+        </label>
+      </div>
+
+      <button id="likert-one-continue" class="btn btn-primary" onclick="goToNext('likert-one')">Continue</button>
+    </div>
+
+    <div class="round-two">
+      <h1>Round Two</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/sampleround/sample-bag.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/sampleround/sample-bag.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/sampleround/sample-bag.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-two-continue" class="btn btn-primary" onclick="goToNext('round-two')">Continue</button>
+
+    </div>
+
+    <div class="likert-two">
+      <h1>Likert Two</h1>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          1
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          2
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          3
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          4
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          5
+        </label>
+      </div>
+      <button id="likert-two-continue" class="btn btn-primary" onclick="goToNext('likert-two')">Continue</button>
+    </div>
+
+    <div class="round-three">
+      <h1>Round Three</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/sampleround/sample-bag.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/sampleround/sample-bag.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/sampleround/sample-bag.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-three-continue" class="btn btn-primary" onclick="goToNext('round-three')">Continue</button>
+
+    </div>
+
+    <div class="likert-three">
+      <h1>Likert Three</h1>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          1
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          2
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          3
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          4
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          5
+        </label>
+      </div>
+      <button id="likert-three-continue" class="btn btn-primary" onclick="goToNext('likert-three')">Continue</button>
+    </div>
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="jquery-3.7.1.min.js"></script>
@@ -118,6 +299,27 @@
           $(".sample-likert").show();
         } else if (current_page == "sample-likert") {
           $(".sample-likert").hide();
+          $(".confirm-to-start").show();
+        } else if (current_page == "confirm") {
+          $(".confirm-to-start").hide();
+          $(".round-one").show();
+        } else if (current_page == "round-one") {
+          $(".round-one").hide();
+          $(".likert-one").show();
+        } else if (current_page == "likert-one") {
+          $(".likert-one").hide();
+          $(".round-two").show();
+        } else if (current_page == "round-two") {
+          $(".round-two").hide();
+          $(".likert-two").show();
+        } else if (current_page == "likert-two") {
+          $(".likert-two").hide();
+          $(".round-three").show();
+        } else if (current_page == "round-three") {
+          $(".round-three").hide();
+          $(".likert-three").show();
+        } else if (current_page == "likert-three") {
+          $(".likert-three").hide();
           $(".welcome-page").show();
         }
       }
