@@ -11,20 +11,44 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
       .welcome-page {
-
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .instructions {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .sample-round {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .sample-likert {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .round-one, .round-two, .round-three {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .round-one input[type="radio"], .round-two input[type="radio"], .round-three input[type="radio"]{
@@ -33,10 +57,20 @@
 
       .likert-one, .likert-two, .likert-three {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .confirm-to-start {
         display: none;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       /* Hide the radio button */
@@ -50,7 +84,7 @@
       }
       
       body {
-        background-color: #a1a1a1;
+        background-color: #afafaf;
       }
 
     </style>
@@ -67,9 +101,10 @@
       <h1>Instructions</h1>
       <p>Read the following instructions carefully.</p>
       <p>There will be 3 different sets of 3 similar items.</p>
-      <p>Please select the item that you are most intrigued to buy. After selecting, click continue to proceed to the next page.<br>
-        The next page will show a likert scale representing your confidence on the chosen product. Please select how confidfent you are that you chose the best product. <br>
-        Click continue to proceed to the next items.</p>
+      <p>Please select the item that you are most intrigued to buy. After selecting, click continue to proceed to the next page.
+        <br>The next page will show a likert scale representing your confidence on the chosen product. 
+        <br>Please select how confident you are that you chose the best product. 
+        <br>Click continue to proceed to the next items.</p>
       
       <button id="inctruction-continue" class="btn btn-primary" onclick="goToNext('instructions')">Continue</button>
     </div>
