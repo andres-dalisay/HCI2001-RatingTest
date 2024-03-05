@@ -22,6 +22,16 @@
       .sample-likert {
         display: none;
       }
+
+      /* Hide the radio button */
+      .sample-round input[type="radio"] {
+        display: none;
+      }
+
+      /* Change the border color when the radio button is selected */
+      input[type="radio"]:checked + img {
+        outline: 2px solid #f00;
+      }
     </style>
 
   </head>
@@ -40,11 +50,52 @@
 
     <div class="sample-round">
       <h1>Sample Round</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          <img src="images/sampleround/sample-bag.png" alt="Image 1">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/sampleround/sample-bag.png" alt="Image 2">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/sampleround/sample-bag.png" alt="Image 3">
+        </label>
+      </div>
       <button id="round-continue" class="btn btn-primary" onclick="goToNext('sample-round')">Continue</button>
+
     </div>
 
     <div class="sample-likert">
       <h1>Sample Likert</h1>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          1
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          2
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          3
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+          4
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+          5
+        </label>
+
       <button id="likert-continue" class="btn btn-primary" onclick="goToNext('sample-likert')">Continue</button>
     </div>
 
