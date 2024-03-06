@@ -20,12 +20,16 @@
         'likert-three': ''
       };
 
-      // Rest of your existing code...
 
       // Function to update the selected options
       function updateSelectedOption(section, value) {
         selectedOptions[section] = value;
         console.log(`Selected ${section}: ${value}`);
+      }
+
+      // Make a function to return all the value pairs of selectedOptions
+      function getSelectedOptions() {
+        return selectedOptions;
       }
 
       // Function to retrieve the selected options
@@ -62,11 +66,13 @@
       }
       .instructions {
         display: none;
-        text-align: center;
+        text-align: left;
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+        /* font size */
+        font-size: 20px;
       }
       .sample-round {
         display: none;
@@ -114,6 +120,24 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+
+      .results {
+        display: none;
+        text-align: left;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+      }
+
+      .copy-results {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: left;
       }
 
       /* Hide the radio button */
@@ -254,23 +278,23 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="Fairly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
           Completely Confident
         </label>
       </div>
@@ -306,23 +330,23 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="airly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
           Completely Confident
         </label>
       </div>
@@ -357,27 +381,38 @@
       <!-- Make a 5-point likert scale -->
       <div class="radio">
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="Not Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
           Not Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="Slightly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
           Slightly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="Somewhat Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
           Somewhat Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios4" value="Fairly Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
           Fairly Confident
         </label>
         <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios5" value="Completely Confident">
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
           Completely Confident
         </label>
       </div>
       <button id="likert-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three')">Continue</button>
+    </div>
+
+    <div class="results">
+      <h1>Results</h1>
+      <p>Thank you for participating in the experiment.</p>
+      <p>Your results have been recorded.</p>
+      <p>Please copy the results below and send it to the practitioner. Thank you!</p>
+      <div class="copy-results">
+
+      </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -388,6 +423,7 @@
       var hello = "what";
       var startTime;
       var tempRound;
+
 
       function startTimer() {
           startTime = new Date();
@@ -474,7 +510,19 @@
             return;
           }
           $(".likert-three").hide();
-          $(".welcome-page").show();
+          $(".results").show();
+          // Display the results
+          var results = getSelectedOptions();
+          var resultsString = "";
+          // Loop through the value pairs
+          for (var key in results) {
+            resultsString += `${results[key]}`;
+            // if not last key, add comma
+            if (key !== "likert-three") {
+              resultsString += ", ";
+            }
+          }
+          $(".copy-results").html(resultsString);
         }
       }
 
