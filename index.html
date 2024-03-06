@@ -13,10 +13,13 @@
       // Global variables to store selected options
       var selectedOptions = {
         'round-one': '',
+        'round-one-time': '',
         'likert-one': '',
         'round-two': '',
+        'round-two-time': '',
         'likert-two': '',
         'round-three': '',
+        'round-three-time': '',
         'likert-three': ''
       };
 
@@ -432,7 +435,9 @@
       function stopTimerAndLogTime(section) {
           var endTime = new Date();
           var elapsedTime = endTime - startTime;
-
+          var roundTimeString = "";
+          roundTimeString += section + '-time';
+          selectedOptions[roundTimeString] = elapsedTime;
           console.log(`Time spent on ${section}: ${elapsedTime} milliseconds`);
       }
       // make a function that hides the welcome page and shows the instructions
