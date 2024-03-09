@@ -407,6 +407,476 @@
       <button id="likert-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three')">Continue</button>
     </div>
 
+    <div class="instructions-interface-rebuild">
+      <h1>Instructions</h1>
+      <p>Please read the following instructions carefully.</p>
+
+      <button id="inctruction-continue" class="btn btn-primary" onclick="goToNext('instructions-interface-rebuild')">Continue to Next Round</button>
+    </div>
+
+    <div class="round-one-star">
+      <h1>Round One</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-one-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-star')">Continue</button>
+
+    </div>
+
+    <div class="likert-one-star">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+
+      <button id="likert-one-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-one-star')">Continue</button>
+    </div>
+
+    <div class="round-two-star">
+      <h1>Round Two</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-two-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-star')">Continue</button>
+
+    </div>
+
+    <div class="likert-two-star">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-two-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-two-star')">Continue</button>
+    </div>
+
+    <div class="round-three-star">
+      <h1>Round Three</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-three-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-star')">Continue</button>
+
+    </div>
+
+    <div class="likert-three-star">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-three-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-star')">Continue</button>
+    </div>
+
+    <div class="round-one-like">
+      <h1>Round One</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-one-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-like')">Continue</button>
+
+    </div>
+
+    <div class="likert-one-like">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+
+      <button id="likert-one-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-one-like')">Continue</button>
+    </div>
+
+    <div class="round-two-like">
+      <h1>Round Two</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-two-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-like')">Continue</button>
+
+    </div>
+
+    <div class="likert-two-like">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-two-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-two-like')">Continue</button>
+    </div>
+
+    <div class="round-three-like">
+      <h1>Round Three</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-three-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-like')">Continue</button>
+
+    </div>
+
+    <div class="likert-three-like">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-three-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-like')">Continue</button>
+    </div>
+
+    <div class="round-one-upvote">
+      <h1>Round One</h1>
+    
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-one-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-upvote')">Continue</button>
+    
+    </div>
+    
+    <div class="likert-one-upvote">
+      <h4>How confident are you with the chosen product?</h4>
+    
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+    
+      <button id="likert-one-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-one-upvote')">Continue</button>
+    </div>
+    
+    <div class="round-two-upvote">
+      <h1>Round Two</h1>
+    
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-two-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-upvote')">Continue</button>
+    
+    </div>
+    
+    <div class="likert-two-upvote">
+      <h4>How confident are you with the chosen product?</h4>
+    
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-two-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-two-upvote')">Continue</button>
+    </div>
+    
+    <div class="round-three-upvote">
+      <h1>Round Three</h1>
+    
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-three-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-upvote')">Continue</button>
+    
+    </div>
+    
+    <div class="likert-three-upvote">
+      <h4>How confident are you with the chosen product?</h4>
+    
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-three-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-upvote')">Continue</button>
+    </div>
+
+
     <div class="results">
       <h1>Results</h1>
       <p>Thank you for participating in the experiment.</p>
