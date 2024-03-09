@@ -94,7 +94,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      .instructions, .instructions-interface-rebuild {
+      .instructions, .instructions-interface-rebuild, .page-break-to-like, .page-break-to-upvote{
         display: none;
         text-align: left;
         position: absolute;
@@ -595,6 +595,13 @@
       <button id="likert-three-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-star')">Continue</button>
     </div>
 
+    <div class="page-break-to-like">
+      <h1>Instructions</h1>
+      <p>Please read the following instructions carefully.</p>
+
+      <button id="inctruction-continue" class="btn btn-primary" onclick="goToNext('page-break-to-like')">Continue to Next Round</button>
+    </div>
+
     <div class="round-one-like">
       <h1>Round One</h1>
 
@@ -747,6 +754,13 @@
         </label>
       </div>
       <button id="likert-three-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-like')">Continue</button>
+    </div>
+
+    <div class="page-break-to-upvote">
+      <h1>Instructions</h1>
+      <p>Please read the following instructions carefully.</p>
+
+      <button id="inctruction-continue" class="btn btn-primary" onclick="goToNext('page-break-to-upvote')">Continue to Next Round</button>
     </div>
 
     <div class="round-one-upvote">
@@ -1066,6 +1080,9 @@
             return;
           }
           $(".likert-three-star").hide();
+          $(".page-break-to-like").show();
+        } else if(current_page == "page-break-to-like"){
+          $(".page-break-to-like").hide();
           $(".round-one-like").show();
           startTimer();
         } else if(current_page == "round-one-like"){
@@ -1117,6 +1134,9 @@
             return;
           }
           $(".likert-three-like").hide();
+          $(".page-break-to-upvote").show();
+        } else if(current_page == "page-break-to-upvote"){
+          $(".page-break-to-upvote").hide();
           $(".round-one-upvote").show();
           startTimer();
         } else if(current_page == "round-one-upvote"){
