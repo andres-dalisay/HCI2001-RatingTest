@@ -21,6 +21,12 @@
         'round-three': '',
         'round-three-time': '',
         'likert-three': '',
+        'round-four':'',
+        'round-four-time': '',
+        'likert-four': '',
+        'round-five':'',
+        'round-five-time': '',
+        'likert-five': '',
         'round-one-star': '',
         'round-one-star-time': '',
         'likert-one-star': '',
@@ -30,6 +36,12 @@
         'round-three-star': '',
         'round-three-star-time': '',
         'likert-three-star': '',
+        'round-four-star': '',
+        'round-four-star-time': '',
+        'likert-four-star': '',
+        'round-five-star': '',
+        'round-five-star-time': '',
+        'likert-five-star': '',
         'round-one-like': '',
         'round-one-like-time': '',
         'likert-one-like': '',
@@ -39,6 +51,12 @@
         'round-three-like': '',
         'round-three-like-time': '',
         'likert-three-like': '',
+        'round-four-like': '',
+        'round-four-like-time': '',
+        'likert-four-like': '',
+        'round-five-like': '',
+        'round-five-like-time': '',
+        'likert-five-like': '',
         'round-one-upvote': '',
         'round-one-upvote-time': '',
         'likert-one-upvote': '',
@@ -47,7 +65,13 @@
         'likert-two-upvote': '',
         'round-three-upvote': '',
         'round-three-upvote-time': '',
-        'likert-three-upvote': ''
+        'likert-three-upvote': '',
+        'round-four-upvote': '',
+        'round-four-upvote-time': '',
+        'likert-four-upvote': '',
+        'round-five-upvote': '',
+        'round-five-upvote-time': '',
+        'likert-five-upvote': ''
       };
 
 
@@ -121,7 +145,7 @@
         transform: translate(-50%, -50%);
       }
 
-      .round-one, .round-two, .round-three, .round-one-star, .round-two-star, .round-three-star, .round-one-like, .round-two-like, .round-three-like, .round-one-upvote, .round-two-upvote, .round-three-upvote{
+      .round-one, .round-two, .round-three, .round-four, .round-five, .round-one-star, .round-two-star, .round-three-star, .round-four-star, .round-five-star, .round-one-like, .round-two-like, .round-three-like, .round-four-like, .round-five-like, .round-one-upvote, .round-two-upvote, .round-three-upvote, .round-four-upvote, .round-five-upvote{
         display: none;
         text-align: center;
         position: absolute;
@@ -130,11 +154,11 @@
         transform: translate(-50%, -50%);
       }
 
-      .round-one input[type="radio"], .round-two input[type="radio"], .round-three input[type="radio"], .round-one-star input[type="radio"], .round-two-star input[type="radio"], .round-three-star input[type="radio"], .round-one-like input[type="radio"], .round-two-like input[type="radio"], .round-three-like input[type="radio"], .round-one-upvote input[type="radio"], .round-two-upvote input[type="radio"], .round-three-upvote input[type="radio"]{
+      .round-one input[type="radio"], .round-two input[type="radio"], .round-three input[type="radio"], .round-four input [type='radio'], .round-five input[type='radio'], .round-one-star input[type="radio"], .round-two-star input[type="radio"], .round-three-star input[type="radio"], .round-four-star input[type="radio"], .round-five-star input[type="radio"], .round-one-like input[type="radio"], .round-two-like input[type="radio"], .round-three-like input[type="radio"], .round-four-like input[type="radio"], .round-five-like input[type="radio"], .round-one-upvote input[type="radio"], .round-two-upvote input[type="radio"], .round-three-upvote input[type="radio"], .round-four-upvote input[type="radio"], .round-five-upvote input[type="radio"]{
         display: none;
       }
 
-      .likert-one, .likert-two, .likert-three, .likert-one-star, .likert-two-star, .likert-three-star, .likert-one-like, .likert-two-like, .likert-three-like, .likert-one-upvote, .likert-two-upvote, .likert-three-upvote{
+      .likert-one, .likert-two, .likert-three, .likert-four, .likert-five, .likert-one-star, .likert-two-star, .likert-three-star, .likert-four-star, .likert-five-star, .likert-one-like, .likert-two-like, .likert-three-like, .likert-four-like, .likert-five-like, .likert-one-upvote, .likert-two-upvote, .likert-three-upvote, .likert-four-upvote, .likert-five-upvote{
         display: none;
         text-align: center;
         position: absolute;
@@ -287,15 +311,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie.png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+          <img src="images/roundone/Product 2 - Hoodie.png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+          <img src="images/roundone/Product 3 - Hoodie.png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-one-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one')">Continue</button>
@@ -339,15 +363,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles.png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+          <img src="images/roundtwo/Product 5 - Goggles.png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+          <img src="images/roundtwo/Product 6 - Goggles.png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-two-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two')">Continue</button>
@@ -390,15 +414,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella.png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+          <img src="images/roundthree/Product 8 - Umbrella.png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+          <img src="images/roundthree/Product 9 - Umbrella.png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three')">Continue</button>
@@ -434,6 +458,108 @@
       <button id="likert-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three')">Continue</button>
     </div>
 
+    <div class="round-four">
+      <h1>Round Four</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfour/Product 19.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfour/Product 20.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfour/Product 25.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-three-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-four')">Continue</button>
+
+    </div>
+
+    <div class="likert-four">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-four-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-four')">Continue</button>
+    </div>
+
+    <div class="round-five">
+      <h1>Round Five</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfive/Product 22.png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfive/Product 23.png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfive/Product 24.png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-five-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-five')">Continue</button>
+
+    </div>
+
+    <div class="likert-five">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-five-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-five')">Continue</button>
+    </div>
+
     <div class="instructions-interface-rebuild">
       <h1>Instructions</h1>
       <p>Please read the following instructions carefully.</p>
@@ -448,15 +574,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_star (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_star (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_star (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-one-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-star')">Continue</button>
@@ -500,15 +626,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_star (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_star (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_star (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-two-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-star')">Continue</button>
@@ -551,15 +677,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_star (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_star (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_star (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-three-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-star')">Continue</button>
@@ -595,6 +721,108 @@
       <button id="likert-three-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-star')">Continue</button>
     </div>
 
+    <div class="round-four-star">
+      <h1>Round Four</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfour/Product 19_star (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfour/Product 19_star (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfour/Product 19_star (3).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-four-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-four-star')">Continue</button>
+
+    </div>
+
+    <div class="likert-four-star">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-four-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-four-star')">Continue</button>
+    </div>
+
+    <div class="round-five-star">
+      <h1>Round Five</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfive/Product 23_star (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfive/Product 23_star (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfive/Product 23_star (3).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-five-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-five-star')">Continue</button>
+
+    </div>
+
+    <div class="likert-five-star">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-five-star-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-five-star')">Continue</button>
+    </div>
+
     <div class="page-break-to-like">
       <h1>Instructions</h1>
       <p>Please read the following instructions carefully.</p>
@@ -609,15 +837,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_like (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_like (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_like (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-one-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-like')">Continue</button>
@@ -661,15 +889,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_like (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_like (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_like (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-two-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-like')">Continue</button>
@@ -712,15 +940,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_like (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_like (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_like (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-three-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-like')">Continue</button>
@@ -756,6 +984,108 @@
       <button id="likert-three-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-like')">Continue</button>
     </div>
 
+    <div class="round-four-like">
+      <h1>Round Four</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfour/Product 19_like (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfour/Product 23_like (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfour/Product 19_like (3).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-four-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-four-like')">Continue</button>
+
+    </div>
+
+    <div class="likert-four-like">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-four-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-four-like')">Continue</button>
+    </div>
+
+    <div class="round-five-like">
+      <h1>Round Five</h1>
+
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfive/Product 23_like (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfive/Product 19_like (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfive/Product 23_like (3).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-five-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-five-like')">Continue</button>
+
+    </div>
+
+    <div class="likert-five-like">
+      <h4>How confident are you with the chosen product?</h4>
+
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-five-like-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-five-like')">Continue</button>
+    </div>
+
     <div class="page-break-to-upvote">
       <h1>Instructions</h1>
       <p>Please read the following instructions carefully.</p>
@@ -770,15 +1100,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundone/plain_hoodie.png" alt="Image 1" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_up (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundone/sweatshirt_hoodie.png" alt="Image 2" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_up (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundone/casual_hoodie.png" alt="Image 3" draggable="false">
+          <img src="images/roundone/Product 1 - Hoodie_up (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-one-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-one-upvote')">Continue</button>
@@ -822,15 +1152,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundtwo/uv_googles.png" alt="Image 1" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_up (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundtwo/anti_fog_googles.png" alt="Image 2" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_up (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundtwo/silicone_googles.png" alt="Image 3" draggable="false">
+          <img src="images/roundtwo/Product 4 - Goggles_up (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-two-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-two-upvote')">Continue</button>
@@ -873,15 +1203,15 @@
       <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-          <img src="images/roundthree/gerrman_umbrella.png" alt="Image 1" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_up (1).png" alt="Image 1" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          <img src="images/roundthree/lightweight_umbrella.png" alt="Image 2" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_up (2).png" alt="Image 2" draggable="false">
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-          <img src="images/roundthree/anti_pressure_umbrella.png" alt="Image 3" draggable="false">
+          <img src="images/roundthree/Product 7 - Umbrella_up (3).png" alt="Image 3" draggable="false">
         </label>
       </div>
       <button id="round-three-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-three-upvote')">Continue</button>
@@ -915,6 +1245,108 @@
         </label>
       </div>
       <button id="likert-three-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-three-upvote')">Continue</button>
+    </div>
+
+    <div class="round-four-upvote">
+      <h1>Round Four</h1>
+    
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfour/Product 19_up (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfour/Product 23_up (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfour/Product 19_up (1).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-four-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-four-upvote')">Continue</button>
+    
+    </div>
+    
+    <div class="likert-four-upvote">
+      <h4>How confident are you with the chosen product?</h4>
+    
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-four-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-four-upvote')">Continue</button>
+    </div>
+
+    <div class="round-five-upvote">
+      <h1>Round Five</h1>
+    
+      <!-- Make a radio selection using images -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+          <img src="images/roundfive/Product 23_up (1).png" alt="Image 1" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <img src="images/roundfive/Product 19_up (2).png" alt="Image 2" draggable="false">
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+          <img src="images/roundfive/Product 23_up (1).png" alt="Image 3" draggable="false">
+        </label>
+      </div>
+      <button id="round-five-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('round-five-upvote')">Continue</button>
+    
+    </div>
+    
+    <div class="likert-five-upvote">
+      <h4>How confident are you with the chosen product?</h4>
+    
+      <!-- Make a 5-point likert scale -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="not_confident">
+          Not Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="slightly_confident">
+          Slightly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="somewhat_confident">
+          Somewhat Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios4" value="fairly_confident">
+          Fairly Confident
+        </label>
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios5" value="completely_confident">
+          Completely Confident
+        </label>
+      </div>
+      <button id="likert-five-upvote-continue" class="btn btn-primary" onclick="handleRadioButtonSelection('likert-five-upvote')">Continue</button>
     </div>
 
 
@@ -1026,6 +1458,40 @@
             return;
           }
           $(".likert-three").hide();
+          $(".round-four").show();
+          startTimer();
+        } else if (current_page == "round-four") {
+          tempRound = current_page;
+          if (!validateRadioSelection('round-four')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-four").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-four").show();
+        } else if (current_page == "likert-four") {
+          if (!validateRadioSelection('likert-four')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-four").hide();
+          $(".round-five").show();
+          startTimer();
+        } else if (current_page == "round-five") {
+          tempRound = current_page;
+          if (!validateRadioSelection('round-five')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-five").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-five").show();
+        } else if (current_page == "likert-five") {
+          if (!validateRadioSelection('likert-five')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-five").hide();
           $(".instructions-interface-rebuild").show();
         } else if(current_page == "instructions-interface-rebuild"){
           $(".instructions-interface-rebuild").hide();
@@ -1080,6 +1546,40 @@
             return;
           }
           $(".likert-three-star").hide();
+          $(".round-four-star").show();
+          startTimer();
+        } else if(current_page == "round-four-star"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-four-star')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-four-star").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-four-star").show();
+        } else if(current_page == "likert-four-star"){
+          if (!validateRadioSelection('likert-four-star')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-four-star").hide();
+          $(".round-five-star").show();
+          startTimer();
+        } else if(current_page == "round-five-star"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-five-star')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-five-star").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-five-star").show();
+        } else if(current_page == "likert-five-star"){
+          if (!validateRadioSelection('likert-five-star')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-five-star").hide();
           $(".page-break-to-like").show();
         } else if(current_page == "page-break-to-like"){
           $(".page-break-to-like").hide();
@@ -1134,6 +1634,40 @@
             return;
           }
           $(".likert-three-like").hide();
+          $(".round-four-like").show();
+          startTimer();
+        } else if(current_page == "round-four-like"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-four-like')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-four-like").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-four-like").show();
+        } else if(current_page == "likert-four-like"){
+          if (!validateRadioSelection('likert-four-like')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-four-like").hide();
+          $(".round-five-like").show();
+          startTimer();
+        } else if(current_page == "round-five-like"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-five-like')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-five-like").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-five-like").show();
+        } else if(current_page == "likert-five-like"){
+          if (!validateRadioSelection('likert-five-like')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-five-like").hide();
           $(".page-break-to-upvote").show();
         } else if(current_page == "page-break-to-upvote"){
           $(".page-break-to-upvote").hide();
@@ -1188,6 +1722,40 @@
             return;
           }
           $(".likert-three-upvote").hide();
+          $(".round-four-upvote").show();
+          startTimer();
+        } else if(current_page == "round-four-upvote"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-four-upvote')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-four-upvote").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-four-upvote").show();
+        } else if(current_page == "likert-four-upvote"){
+          if (!validateRadioSelection('likert-four-upvote')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-four-upvote").hide();
+          $(".round-five-upvote").show();
+          startTimer();
+        } else if(current_page == "round-five-upvote"){
+          tempRound = current_page;
+          if (!validateRadioSelection('round-five-upvote')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".round-five-upvote").hide();
+          stopTimerAndLogTime(tempRound);
+          $(".likert-five-upvote").show();
+        } else if(current_page == "likert-five-upvote"){
+          if (!validateRadioSelection('likert-five-upvote')) {
+            alert("Please make a selection before continuing.");
+            return;
+          }
+          $(".likert-five-upvote").hide();
           $(".results").show();
           // Display the results
           var results = getSelectedOptions();
@@ -1196,7 +1764,7 @@
           for (var key in results) {
             resultsString += `${results[key]}`;
             // if not last key, add comma
-            if (key !== "likert-three-upvote") {
+            if (key !== "likert-five-upvote") {
               resultsString += ", ";
             }
           }
